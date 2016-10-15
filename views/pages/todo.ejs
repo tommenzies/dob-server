@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <% include ../partials/global/css %>
+    <title> <%= title %> </title>
+  </head>
+  <body>    
+    <div class="container">
+      <h1>Hello World</h1>
+      <ul>
+        <% for (i=0; i < data.length; i++) { %>
+          <li> <%= data[i] %></li>
+        <% }; %>
+      </ul>
+      <form action="todo/newdata" method="post">
+        <input type="text" name="todo"/>
+        <input type="submit" value="Add"/> 
+      </form>
+    </div>
+
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+    <% include ../partials/global/js %> -->
+  </body>
+</html>

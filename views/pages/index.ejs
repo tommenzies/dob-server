@@ -1,6 +1,6 @@
 <html>
   <head>
-    <% include ../partials/globalcss %>
+    <% include ../partials/global/css %>
     <link rel="stylesheet" href="/public/cover.css">
     <title> <%= title %> </title>
   </head>
@@ -46,24 +46,6 @@
     </div>
 
     <!-- /.container -->
-<!--
-
-    <div class="container">
-      <h1>Hello World</h1>
-      <ul>
-        <% for (i=0; i < data.length; i++) { %>
-          <li> <%= data[i] %> + <%= i %></li>
-        <% }; %>
-      </ul>
-      <form action="/newdata" method="post">
-        <input type="text" name="todo"/>
-        <input type="submit" value="Add"/> 
-      </form>
-    </div>
-
-    <footer>
-      <% include ../partials/footer %>
-    </footer>
-    <% include ../partials/globaljs %> -->
+    <% include ../partials/global/js %>
   </body>
 </html>
