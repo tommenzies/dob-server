@@ -4,10 +4,14 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
+app.set('view engine', 'ejs');
+
+
+
 app.get('/', function (req,res) {
-	res.send('Hello World!');
+	res.render('pages/index', { title: "Lol."} );
 });
 
 app.listen(app.get('port'),function() { 
-	console.log;
+	console.log("Runing on ", app.get('port'));
 });
