@@ -3,6 +3,20 @@
     <%= title %>
   </title>
   <body>
+  	<main>
     <h1>Hello World</h1>
+      <ul>
+        <% for (i=0; i < data.length; i++) { %>
+          <li> <%= data[i] %> + <%= i %></li>
+        <% }; %>
+      </ul>
+      <form action="/newdata" method="post">
+        <input type="text" name="todo"/>
+        <input type="submit" value="Add"/> 
+      </form>
+    </main>
+  	<footer>
+  	  <% include ../partials/footer %>
+  	</footer>
   </body>
 </html>
