@@ -11,6 +11,8 @@ app.set('view engine', 'ejs');
 
 app.use('/public', express.static('node_modules/bootstrap/dist'));
 
+app.use('/public', express.static('public'))
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
